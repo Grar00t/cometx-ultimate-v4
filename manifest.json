@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Comet X Ultimate v4",
+  "version": "4.0",
+  "description": "AI-powered sidebar with GitHub integration and Arabic memory context.",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://gratech.sa/*"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Open Comet X Side Panel"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

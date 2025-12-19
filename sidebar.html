@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Comet X Sidebar</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Comet X</h2>
+      <button id="openOptions" title="الإعدادات">⚙️</button>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="notes">ملاحظات</button>
+      <button class="tab-btn" data-tab="github">GitHub</button>
+    </div>
+
+    <div id="notes" class="tab-content active">
+      <textarea id="noteInput" placeholder="اكتب ملاحظتك هنا..."></textarea>
+      <button id="saveNote">حفظ الملاحظة</button>
+      <div id="tagsSuggestion">
+        <!-- Tags will appear here -->
+      </div>
+    </div>
+
+    <div id="github" class="tab-content">
+      <div class="controls">
+        <button id="importIssues">استيراد Issues</button>
+        <button id="importPRs">استيراد PRs</button>
+      </div>
+      <div id="githubList" class="list-container">
+        <p class="placeholder">اضغط استيراد لجلب البيانات...</p>
+      </div>
+    </div>
+  </div>
+  <script src="sidebar.js"></script>
+</body>
+</html>
